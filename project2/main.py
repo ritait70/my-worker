@@ -73,7 +73,7 @@ def main():
         if video_file_obj.state.name == "FAILED":
             raise ValueError("Google 서버에서 동영상 처리에 실패했습니다.")
 
-        model_id = "gemini-2.0-flash" 
+        model_id = "gemini-2.5-flash" 
         prompt = "이 동영상에서 인물이 어떤 행동을 하고 있는지 시간 흐름에 따라 상세히 분석해줘."
 
         response = client.models.generate_content(
